@@ -6,15 +6,16 @@ document.getElementById('deposit-button').addEventListener("click", function(){
     const changedepoMainInput=parseFloat(depoMainInput);  
     // deposit  balance  
     const depositMoney=document.getElementById("deposit-money");
-    const changedepositMoney=parseFloat (depositMoney.innerText);    
-    const totaldepositeMoney= changedepoMainInput + changedepositMoney;
+    const changedepositMoney=depositMoney.innerText;   
+    const changedepositMoneyMain=parseFloat(changedepositMoney) 
+    const totaldepositeMoney= changedepoMainInput + changedepositMoneyMain;
     depositMoney.innerText=totaldepositeMoney;
     depoInput.value= ' ';
 
     // deposite to main total balance;
     const mainTotal=document.getElementById("main-balance")
     const convertMainTotal=parseFloat(mainTotal.innerText)
-    const totalMainAddBalance=totaldepositeMoney + convertMainTotal
+    const totalMainAddBalance= convertMainTotal + changedepoMainInput ;
     mainTotal.innerText=totalMainAddBalance;
 })
 
@@ -31,7 +32,7 @@ document.getElementById('withdraw-button').addEventListener("click", function(){
   //   withdraw main balance
    const mainTotal=document.getElementById("main-balance")
    const convertMainTotal=parseFloat(mainTotal.innerText)
-   const lossMoney=   convertMainTotal - convetwithdrowtotal
+   const lossMoney=   convertMainTotal - convetwinthdrawInput
    mainTotal.innerText=lossMoney;
 
 })
