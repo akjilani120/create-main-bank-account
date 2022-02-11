@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+</head>
+<body>
+    <header>
+        <h1 class="text-5xl text-center font-semibold mt-16">My amound <span class="text-blue-600">Bank Account</span> </h1>
+    </header>
+    <main>
+        <section class="mt-10">
+            <div class="grid grid-cols-3 gap-4 w-3/4 mx-auto">
+                <div class="many-list-1 bg-amber-400 p-8 ">
+                    <h2 class="text-2xl  text-white font-semibold">Deposit Money</h2>
+                    <h3 class="text-4xl  text-white font-semibold" id="">$ <span id="deposit-money">00</span> </h3>
+                </div>
+                <div class="many-list-2 bg-green-400 p-8">
+                    <h2  class="text-2xl text-white font-semibold">Withdrow Money</h2>
+                    <h3 class="text-4xl text-white font-semibold" id="money-second">$ <span id="withdrow-balance">00</span></h3>
+                </div>
+                <div class="many-list-3 bg-emerald-400 p-8">
+                    <h2 class="text-2xl text-white font-semibold">Total  Money</h2>
+                    <h3 class="text-4xl text-white font-semibold" id="money-third">$ <span id="main-balance">5000</span> </h3>
+                </div>
+            </div>
+        </section>
+        <section class="second-sec mt-10">
+            <div class="grid grid-cols-2 gap-4 w-3/4 mx-auto">
+                <div class="p-8 bg-lime-300">
+                    <h2 class="text-2xl my-4">Please Deposit</h2>
+                    <input id="deposit-input" class="w-3/4 block my-3 border border-zinc-600 p-1 rounded" type="text" placeholder="$ amount you want to deposit">
+                    <button class="login-btn bg-yellow-500 px-3 py-2 text-white font-semibold rounded " id="deposit-button">Deposit</button>
+                </div>
+                <div class="p-8 bg-yellow-300">
+                    <h2 class="text-2xl my-4">Please Withdraw</h2>
+                    <input id="withdraw-input" class="w-3/4 block my-3 border border-zinc-600 p-1 rounded" type="text" placeholder="$ amount you want to withdraw">
+                    <button  class="login-btn bg-yellow-500 px-3 py-2 text-white font-semibold rounded" id="withdraw-button">Withdraw</button>
+                </div>
+            </div>
+            
+        </section>
+    </main>
+    <script src="bank-page.js"></script>
+</body>
+</html>
